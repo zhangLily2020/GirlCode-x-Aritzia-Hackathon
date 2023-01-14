@@ -13,8 +13,10 @@ def compute_hc() -> None:
         hc = input("")
         if hc in light_hc:
             results.append(1)
+            return
         elif hc in dark_hc:
             results.append(2)
+            return
         else:
             print("invalid color: please enter a new one")
 
