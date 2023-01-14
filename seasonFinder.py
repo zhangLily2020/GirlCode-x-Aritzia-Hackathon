@@ -26,7 +26,9 @@ print("dark brown | red | ashy blonde | amber | black")
 
 compute_hc()
 
-print(results)
+print("Do you wear glasses?")
+print("yes | no")
+
     
 
 
