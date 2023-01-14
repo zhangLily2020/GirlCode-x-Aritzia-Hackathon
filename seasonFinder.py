@@ -1,9 +1,36 @@
 #0 -> neutral
-#1 -> cool
-#2 -> warm
+#1 -> cool/ light
+#2 -> warm/ dark
+
+
 results = []
 
-results.append(input("What is your hair color?"))
+def compute_hc() -> None:
+    light_hc = ['chesnut', 'dark brown', 'red', 'strawberry', 'blonde', 'amber']
+    dark_hc = ['black', 'ashy brown', 'grey', 'ashy blonde']
+
+    while True:
+        hc = input("")
+        if hc in light_hc:
+            results.append(1)
+        elif hc in dark_hc:
+            results.append(2)
+        else:
+            print("invalid color: please enter a new one")
+
+print("Please choose from one of the following hair colors:")
+print("chesnut | ashy brown | grey | blonde | chesnut")
+print("dark brown | red | ashy blonde | amber | black")
+
+compute_hc()
+
+print(results)
+    
+
+
+
+
+
 
 
 
